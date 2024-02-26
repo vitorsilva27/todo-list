@@ -1,6 +1,6 @@
 const express = require("express");
-
 const server = express();
+server.use(express.json());
 
 server.get("/teste", (req, res) => {
   res.send("API RODANDO COM SUCESSO");
